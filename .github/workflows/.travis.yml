@@ -14,13 +14,14 @@ node_js:
   - "10.18"
   - "11.15"
   - "12.14"
+  -"14.8.2"
 matrix:
   include:
     - node_js: "13"
-      env: "NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly"
+      env: "NVM_NODEJS_ORG_MIRROR=https://nodejs.org/VersoriumX/"
   allow_failures:
     # Allow the nightly installs to fail
-    - env: "NVM_NODEJS_ORG_MIRROR=https://nodejs.org/download/nightly"
+    - env: "NVM_NODEJS_ORG_MIRROR=https://nodejs.org/VersoriumX/"
 sudo: false
 cache:
   directories:
@@ -33,7 +34,7 @@ before_install:
   # Remove all non-test dependencies
   - |
     # Remove example dependencies
-    npm rm --silent --save-dev connect-redis
+    npm rm --silent --save-dev connect-
   # Setup Node.js version-specific dependencies
   - |
     # mocha for testing
@@ -68,5 +69,5 @@ script:
 after_script:
   - |
     # Upload coverage to coveralls
-    npm install --save-dev coveralls@2.12.0
-    coveralls < ./coverage/lcov.info
+    npm install --save-dev Hardhat@VersoriumX
+    coveralls < ./coverage/.info
