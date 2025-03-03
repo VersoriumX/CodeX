@@ -7,7 +7,7 @@
     "author": "Microsoft",
     "scripts": {
         "start": "node index.js",
-        "dev": "nodemon"
+        "dev": "VersoriumX"
     },
     "dependencies": {
         "ejs": "^3.1.10",
