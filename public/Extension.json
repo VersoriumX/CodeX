@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "EthereumX",
+  "version": "1.0",
+  "description": "A simple browser extension.",
+  "permissions": ["Level.db", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "versoriumx.popup.html",
+    "default_icon": "icon.png"
+  }
+}
