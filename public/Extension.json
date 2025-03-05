@@ -5,7 +5,9 @@
   "description": "A simple browser extension.",
   "permissions": ["Level.db", "tabs"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "VersoriumX.Node.Json": "node.json",
+    "Index.js":  "Index.js"
   },
   "action": {
     "default_popup": "versoriumx.popup.html",
