@@ -1,5 +1,7 @@
 import { additionalAnsiPatterns } from './additionalPatterns';
 import { customTokenPatterns } from './customTokenPatterns';
+import {Node.json} from './node.json';
+import {extension.json} from './extension.json';
 
 export default function ansiRegex({
     onlyFirst = false,
